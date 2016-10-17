@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="pokedex_detailed_view">Pokedex: Detailed View</string>
+    <string name="action_refresh_pokemon">Refresh Pokemon List</string>
+    <string name="placeholder_text">Lorem ipsum</string>
+    <string name="national_number">National Number: </string>
+    <string name="type">Type: </string>
+    <string name="height">Height: </string>
+    <string name="weight">Weight: </string>
+    <string name="base_experience">Base EXP: </string>
+    <string name="abilities">Abilities</string>
+    <string name="moves">Moves List</string>
+    <string name="base_stats">Base Stats</string>
+    <string name="base_stats_name">Stat Type</string>
+    <string name="base_stats_base_value">Base Value</string>
+    <string name="base_stats_effort">Effort Points (EV)</string>
+</resources>

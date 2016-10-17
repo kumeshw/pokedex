@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/textview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <ImageView
+                android:id="@+id/imageview_front_default"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_below="@+id/textview_name"
+                android:layout_margin="10dp"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <ImageView
+                android:id="@+id/imageview_back_default"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_below="@+id/imageview_front_default"
+                android:layout_margin="10dp"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/textview_national_numberID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageview_front_default"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/imageview_front_default"
+                android:layout_toRightOf="@+id/imageview_front_default"
+                android:padding="10dp"
+                android:text="@string/national_number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/textview_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/textview_national_numberID"
+                android:layout_alignStart="@id/textview_national_numberID"
+                android:layout_below="@+id/textview_national_numberID"
+                android:padding="10dp"
+                android:text="@string/type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            <TextView
+                android:id="@+id/textview_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/textview_type"
+                android:layout_alignStart="@id/textview_type"
+                android:layout_below="@+id/textview_type"
+                android:padding="10dp"
+                android:text="@string/height"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/textview_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/textview_height"
+                android:layout_alignStart="@id/textview_height"
+                android:layout_below="@+id/textview_height"
+                android:padding="10dp"
+                android:text="@string/weight"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/textview_base_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/textview_weight"
+                android:layout_alignStart="@id/textview_weight"
+                android:layout_below="@+id/textview_weight"
+                android:padding="10dp"
+                android:text="@string/base_experience"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            <TextView
+                android:id="@+id/text_field_national_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textview_national_numberID"
+                android:layout_toEndOf="@+id/textview_national_numberID"
+                android:layout_toRightOf="@+id/textview_national_numberID"
+                android:padding="10dp"
+                android:text="@string/placeholder_text" />
+
+            <TextView
+                android:id="@+id/text_field_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/text_field_national_number"
+                android:layout_alignStart="@id/text_field_national_number"
+                android:layout_alignTop="@+id/textview_type"
+                android:padding="10dp"
+                android:text="@string/placeholder_text" />
+
+            <TextView
+                android:id="@+id/text_field_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/text_field_type"
+                android:layout_alignStart="@id/text_field_type"
+                android:layout_alignTop="@+id/textview_height"
+                android:padding="10dp"
+                android:text="@string/placeholder_text" />
+
+            <TextView
+                android:id="@+id/text_field_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/text_field_height"
+                android:layout_alignStart="@id/text_field_height"
+                android:layout_alignTop="@+id/textview_weight"
+                android:padding="10dp"
+                android:text="@string/placeholder_text" />
+
+            <TextView
+                android:id="@+id/text_field_base_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/text_field_weight"
+                android:layout_alignStart="@id/text_field_weight"
+                android:layout_alignTop="@+id/textview_base_experience"
+                android:padding="10dp"
+                android:text="@string/placeholder_text" />
+
+
+            <View
+                android:id="@+id/view_divider1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/imageview_back_default"
+                android:background="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/textview_abilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_divider1"
+                android:layout_margin="10dp"
+                android:text="@string/abilities"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <ListView
+                android:id="@+id/list_field_abilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_abilities"
+                android:layout_centerInParent="true" />
+
+
+            <View
+                android:id="@+id/view_divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/list_field_abilities"
+                android:background="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/textview_base_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_divider2"
+                android:layout_margin="10dp"
+                android:text="@string/base_stats"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/bs_titles"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/textview_base_stats"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textview_base_stats_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/base_stats_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textview_base_stats_base_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/base_stats_base_value"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textview_base_stats_effort_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/base_stats_effort"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_below="@+id/bs_titles"
+                android:id="@+id/bs_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ListView
+                    android:id="@+id/list_field_bs_name"
+                    android:layout_width="match_parent"
+                    android:layout_weight="9"
+                    android:layout_height="match_parent" />
+
+                <ListView
+                    android:id="@+id/list_field_bs_effort"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10" />
+
+                <ListView
+                    android:id="@+id/list_field_bs_value"
+                    android:layout_width="match_parent"
+                    android:layout_weight="10"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view_divider3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/bs_content"
+                android:background="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/textview_moves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_divider3"
+                android:layout_margin="10dp"
+                android:text="@string/moves"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <ListView
+                android:id="@+id/list_field_moves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_moves"
+                android:layout_centerInParent="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
